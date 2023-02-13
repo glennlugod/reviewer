@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "reviewer",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authreviewer95a22aa1",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

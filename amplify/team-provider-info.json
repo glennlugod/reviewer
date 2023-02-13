@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "reviewer95a22aa1": {}
+      },
+      "api": {
+        "reviewer": {}
       }
     }
   }
