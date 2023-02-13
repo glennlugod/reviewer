@@ -13,10 +13,18 @@
     },
     "categories": {
       "auth": {
-        "reviewer95a22aa1": {}
+        "reviewer95a22aa1": {},
+        "userPoolGroups": {}
       },
       "api": {
-        "reviewer": {}
+        "reviewer": {},
+        "AdminQueries": {}
+      },
+      "function": {
+        "AdminQueriesd25ac688": {
+          "deploymentBucketName": "amplify-reviewer-dev-130141-deployment",
+          "s3Key": "amplify-builds/AdminQueriesd25ac688-716c526c394c506a3858-build.zip"
+        }
       }
     }
   }
