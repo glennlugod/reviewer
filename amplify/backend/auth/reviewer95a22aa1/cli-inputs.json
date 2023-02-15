@@ -29,7 +29,8 @@
     ],
     "userpoolClientReadAttributes": [
       "email",
-      "nickname"
+      "nickname",
+      "email_verified"
     ],
     "userpoolClientLambdaRole": "review95a22aa1_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": true,

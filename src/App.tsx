@@ -1,11 +1,10 @@
 import './App.css';
 import '@fontsource/inter/variable.css';
 import '@aws-amplify/ui-react/styles.css';
-import {  } from '@aws-amplify/ui-react';
 
-import { Authenticator, Button, ThemeProvider } from '@aws-amplify/ui-react';
+import { Authenticator, ThemeProvider } from '@aws-amplify/ui-react';
 
-import { Amplify } from 'aws-amplify';
+import { Auth } from 'aws-amplify';
 
 const theme = {
   name: 'custom-button-theme',
@@ -29,10 +28,10 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Authenticator>
+      <Authenticator signUpAttributes={["nickname"]}>
         {({ signOut, user }) => (
           <main>
-            <h1>Hello {user?.username}</h1>
+            <h1>Hello {user?.attributes?.nickname}</h1>
             <button onClick={signOut}>Sign out</button>
           </main>
         )}
